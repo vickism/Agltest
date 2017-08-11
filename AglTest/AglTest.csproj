@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>AglTest</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="_NCrunch_AglTest\**" />
+    <EmbeddedResource Remove="_NCrunch_AglTest\**" />
+    <None Remove="_NCrunch_AglTest\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="AglTest.v3.ncrunchproject" />
+    <None Remove="AglTest.v3.ncrunchsolution" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+</Project>
